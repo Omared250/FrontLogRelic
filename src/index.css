@@ -1,7 +1,56 @@
-html {
-    background-color: #545d68;
+body {
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
 }
 
 .title {
     color: white;
+}
+
+.log-form {
+    margin: auto;
+    max-width: 60%;
+}
+
+@media (max-width: 1440px) {
+    .log-form {
+        max-width: 100%;
+    }
+}
+
+.form-control {
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+.contact-image {
+    text-align: center;
+}
+
+.contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: 5%;
+    transform: rotate(29deg);
+}
+
+form {
+    padding: 10%;
+}
+
+h3 {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+
+.btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
 }
