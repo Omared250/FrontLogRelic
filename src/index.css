@@ -22,6 +22,10 @@ body {
     border-radius: 1rem;
 }
 
+.message {
+    height: 175px;
+}
+
 .contact-image {
     text-align: center;
 }

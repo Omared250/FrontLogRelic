@@ -1,5 +1,6 @@
 import swal from "sweetalert";
 import { useForm } from "../hooks/useForm";
+import { newReliclogs } from "../api/newRelicLogs";
 
 const initialForm = {
     logType: '',
@@ -17,7 +18,7 @@ export const SendLogOption1 = () => {
     const onLogSubmit = ( event ) => {
         event.preventDefault();
         if (areAllInputsFilled()) {
-            console.log(formState);
+            newReliclogs( formState );
         } else {
             swal({
                 title: "Something is Wrong 🤔",
@@ -73,7 +74,7 @@ export const SendLogOption1 = () => {
               </div>
               <div className="form-group">
                 <input
-                  type="text"
+                  type="password"
                   name="nrApiKey"
                   className="form-control"
                   placeholder="New relic API Key *"
@@ -94,11 +95,10 @@ export const SendLogOption1 = () => {
               <div className="form-group">
                 <textarea
                   name="message"
-                  className="form-control"
+                  className="form-control message"
                   placeholder="Log Message *"
                   value={ message }
                   onChange={ onInputChange }
-                  // style="width: 100%; height: 150px;"
                 ></textarea>
               </div>
             </div>
