@@ -58,3 +58,18 @@ h3 {
     color: #fff;
     cursor: pointer;
 }
+
+.paste_log__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.repeat_log__input {
+    outline: none;
+    padding: 0.3rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    color: gray;
+}

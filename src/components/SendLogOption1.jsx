@@ -1,6 +1,7 @@
 import swal from "sweetalert";
 import { useForm } from "../hooks/useForm";
 import { newReliclogs } from "../api/newRelicLogs";
+import { Rocket } from "./Rocket";
 
 const initialForm = {
     logType: '',
@@ -32,12 +33,7 @@ export const SendLogOption1 = () => {
 
     return (
       <div className="log-form">
-        <div className="contact-image">
-          <img
-            src="https://image.ibb.co/kUagtU/rocket_contact.png"
-            alt="rocket_contact"
-          />
-        </div>
+        <Rocket />
         <form onSubmit={ onLogSubmit }>
           <h3>Drop Us a Log</h3>
           <div className="row">
