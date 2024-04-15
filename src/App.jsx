@@ -1,6 +1,7 @@
 import { NavBar } from './components/NavBar'
 import { SendLogOption1 } from './components/SendLogOption1'
-import { SendLogOption2 } from './components/SendLogOption2'
+import { SendLogsCopyPasteOption } from './components/SendLogsCopyPasteOption'
+
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <div>
       <NavBar />
       {/* <SendLogOption1 /> */}
-      <SendLogOption2 />
+      <SendLogsCopyPasteOption />
     </div>
   )
 }
