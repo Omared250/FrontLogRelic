@@ -7,13 +7,13 @@ import { Home } from './components/Home'
 function App() {
 
   return (
-    // <BrowserRouter>
-    //   <AppRouter />
-    // </BrowserRouter>
-    <div>
-      <NavBar />
-      <Home />
-    </div>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+    // <div>
+    //   <NavBar />
+    //   <Home />
+    // </div>
   )
 }
 
