@@ -1,10 +1,11 @@
 import React from 'react'
+import newRelicLogo from '/src/assets/newrleliclogo.png'
 
 export const Home = () => {
     return (
         <div className='home'>
           <h1>Forwar logs to New Relic</h1>
-          <img src="/src/assets/newrleliclogo.png" alt="Log Forwarding Illustration" />
+          <img src={newRelicLogo} alt="Log Forwarding Illustration" />
           <p>
             This application is designed to forward logs into New Relic, providing you with two convenient options:
           </p>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import newRelicLogo from '/src/assets/newrleliclogo.png'
 
 
 export const NavBar = () => {
@@ -6,7 +7,7 @@ export const NavBar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
             <a className="navbar-brand" href="#">
-              <img src="/src/assets/newrleliclogo.png" alt="..." height="36" />
+              <img src={newRelicLogo} alt="..." height="36" />
             </a>
             <span className="title">FrontLogsRelic</span>
             <button
