@@ -2,6 +2,32 @@ body {
     background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
 }
 
+/* Home Page Style */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+.home h1 {
+    margin-bottom: 1rem;
+}
+
+.home p {
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.home ul {
+    list-style: none;
+}
+
 .title {
     color: white;
 }

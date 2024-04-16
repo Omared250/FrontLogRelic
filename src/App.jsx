@@ -1,15 +1,18 @@
+import { BrowserRouter } from 'react-router-dom'
+import { AppRouter } from './routes/AppRouter'
 import { NavBar } from './components/NavBar'
-import { SendLogOption1 } from './components/SendLogOption1'
-import { SendLogsCopyPasteOption } from './components/SendLogsCopyPasteOption'
+import { Home } from './components/Home'
 
 
 function App() {
 
   return (
+    // <BrowserRouter>
+    //   <AppRouter />
+    // </BrowserRouter>
     <div>
       <NavBar />
-      <SendLogOption1 />
-      {/* <SendLogsCopyPasteOption /> */}
+      <Home />
     </div>
   )
 }
