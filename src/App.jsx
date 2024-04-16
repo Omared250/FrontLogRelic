@@ -8,8 +8,8 @@ function App() {
   return (
     <div>
       <NavBar />
-      {/* <SendLogOption1 /> */}
-      <SendLogsCopyPasteOption />
+      <SendLogOption1 />
+      {/* <SendLogsCopyPasteOption /> */}
     </div>
   )
 }

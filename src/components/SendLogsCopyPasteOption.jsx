@@ -8,11 +8,18 @@ export const SendLogsCopyPasteOption = () => {
   const [nrApi, setNrApi] = useState("");
   const [repeatLog, setRepeatLog] = useState("");
 
+  const clearUpStates = () => {
+    setLogValue("");
+    setNrApi("");
+    setRepeatLog("");
+  }
+
   const processLogValue = (value) => {
     let logObj;
     try {
       // Attempt to parse the value as JSON
       logObj = JSON.parse(value);
+      
       if (!repeatLog) {
         swal({
           title: "Is not a valid time 🤔",
@@ -20,7 +27,19 @@ export const SendLogsCopyPasteOption = () => {
           icon: "error",
           button: "Try Again!",
         });
+        return;
       }
+
+      if (!nrApi) {
+        swal({
+          title: "There is not API key 🤔",
+          text: "Where am I supposed to send the log to ?.. 🤷🏽",
+          icon: "error",
+          button: "Try Again!",
+        });
+        return;
+      }
+
       return {...logObj, nrApi, repeatLog};
     } catch (err) {
       swal({
@@ -37,6 +56,9 @@ export const SendLogsCopyPasteOption = () => {
     e.preventDefault();
     copyPasteLogsOption(processLogValue(logValue));
     // Here you would typically send the processedLog to an API or handle it as needed
+
+    // Cleaning states
+    clearUpStates();
   };
 
   return (
