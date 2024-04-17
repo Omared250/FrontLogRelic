@@ -10,10 +10,6 @@ function App() {
     <BrowserRouter>
       <AppRouter />
     </BrowserRouter>
-    // <div>
-    //   <NavBar />
-    //   <Home />
-    // </div>
   )
 }
 

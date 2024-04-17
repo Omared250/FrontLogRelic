@@ -1,6 +1,8 @@
 import axios from 'axios';
+import { getEnvVariables } from '../helpers/getEnvVariables';
 
-const apiGatewayUrl = 'https://c0adnzr3l1.execute-api.eu-west-1.amazonaws.com/prod/field-logs';
+const { VITE_API_URL_CUSTOM_LOGS } = getEnvVariables();
+const apiGatewayUrl = VITE_API_URL_CUSTOM_LOGS;
 
 export const newReliclogs = async (logMessage) => {
 

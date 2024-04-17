@@ -1,6 +1,8 @@
 import axios from "axios"
+import { getEnvVariables } from '../helpers/getEnvVariables';
 
-const apiUrl = 'https://wuxxdajwxh.execute-api.eu-west-1.amazonaws.com/prod/send-logs';
+const { VITE_API_URL_COPYPASTE_LOGS } = getEnvVariables();
+const apiUrl = VITE_API_URL_COPYPASTE_LOGS;
 
 export const copyPasteLogsOption = async (logValue) => {
     try {
